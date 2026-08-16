@@ -8,5 +8,5 @@ pytgcrypto>=1.2.12
 py-tgcalls~=2.3.3
 py-yt-search~=0.7.2
 python-dotenv~=1.2.2
-yt-dlp[default]>=2026.7.4
+yt-dlp[default]
 static-ffmpeg>=3.0
