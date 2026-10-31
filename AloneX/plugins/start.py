@@ -16,9 +16,6 @@ async def _help(_, m: types.Message):
     await m.reply_text(
         text=m.lang["help_menu"],
         reply_markup=buttons.help_markup(m.lang),
-        quote=True,
-    )
-
 
 @app.on_message(filters.command(["start"]))
 @lang.language()
@@ -66,8 +63,6 @@ async def settings(_, message: types.Message):
         reply_markup=buttons.settings_markup(
             message.lang, admin_only, cmd_delete, _language, message.chat.id
         ),
-        quote=True,
-    )
 
 
 @app.on_message(filters.new_chat_members, group=7)
